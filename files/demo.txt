@@ -1,0 +1,26 @@
+Absolute xpath  (Not recommended) -/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[4]/span/span[3]/label/input
+
+Relative xpath - 
+
+//tagname[@attribute='']
+//tagname[text()='']
+
+
+Contains
+
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+
+Grouping the xpath - starts at 1
+(//input[@name='sex'])[3]
+
+
+Example: verify in chrome (ctrl+f)
+//input[@value='-1']
+//label[text()='Custom']
+//span[text()='Next']
+//input[contains(@id,'UserFirst')]
+//span[contains(text(),'free sales')]
+
+webdriver.chrome.drive=driver/chromedriver.exe
