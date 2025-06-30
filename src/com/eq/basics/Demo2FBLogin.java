@@ -27,9 +27,9 @@ public class Demo2FBLogin {
 //		WebElement element= driver.findElement(By.id("email"));
 //		element.sendKeys("jack23232323232@gmail.com");
 		
-		driver.findElement(By.id("email")).sendKeys("jack23232323232@gmail.com");
-		driver.findElement(By.id("pass")).sendKeys("welcome12343");
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.cssSelector("#email")).sendKeys("jack23232323232@gmail.com");
+		driver.findElement(By.cssSelector("#pass")).sendKeys("welcome12343");
+		driver.findElement(By.cssSelector("[name='login']")).click();
 	}
 
 }
